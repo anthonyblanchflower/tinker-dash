@@ -3,7 +3,7 @@
 A simple Selenium browser launcher which rotates a sequence of browser tabs.
 
 This launcher was developed to display online dashboard pages using the
-Chromium browser. The launcher is intended to run on a single board ARM computer,
+Firefox browser. The launcher is intended to run on a single board ARM computer,
 such as an ASUS Tinker Board or a Raspberry Pi, which is connected to a monitor.
 
 ## Getting Started
@@ -27,7 +27,7 @@ from the Electron GUI project (https://github.com/electron).
 ### Installing
 
 This project is installed to the default /home/linaro folder of the
-ASUS Tinker Board. To install ChromeDriver and tinker-dash to this folder
+ASUS Tinker Board. To install GeckoDriver and tinker-dash to this folder
 use the following steps:
 ```
 sudo apt-get install python-pip

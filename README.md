@@ -48,6 +48,12 @@ unzip -a chromedriver-v1.8.0-linux-arm.zip
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/linaro/bin"
 ```
+
+An additional step is required to install the gecko driver for Firefox:
+```
+/bin/bash set-up.sh <OS Type>
+```
+
 ### Usage
 
 #### Cloud content synchronisation across multiple ARM devices

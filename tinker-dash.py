@@ -1,6 +1,5 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 DASHBOARD_LIST = 'the-dashboard-list.txt'
 TAB_ROTATION_PERIOD = 15  # 15 second tab rotation
@@ -42,9 +41,7 @@ def rotate_dashboard(url_list, driver):
 
 
 def main():
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-infobars")
-    browser = webdriver.Chrome('chromedriver', chrome_options=chrome_options)
+    browser = webdriver.Firefox()
 
     dashboard_list = pull_list(DASHBOARD_LIST)
     # The first browser tab is not in the tab rotation sequence (it is just a placeholder)
